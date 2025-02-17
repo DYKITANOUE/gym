@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>パーソナルジム</title>
+    <!-- サイトの概要を記述しています -->
+    <meta name="description" content="パーソナルジム風のLPサイト" />
+    <!-- googlefont -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Allura&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="l-wrapper">
+      <div class="p-drawer-bg" id="js-drawer-bg"></div>
+      <div class="l-header">
+        <header id="js-header" class="p-header">
+          <div class="p-header__container">
+            <nav class="p-nav">
+              <ul class="p-nav__list p-nav__list--left">
+                <li class="p-nav__item">
+                  <a href="#" class="p-nav__link">OWNER’S PROFILE</a>
+                </li>
+                <li class="p-nav__item">
+                  <a href="#" class="p-nav__link">FEATURE</a>
+                </li>
+                <li class="p-nav__item">
+                  <a href="#" class="p-nav__link">MEMBER’S VOICE</a>
+                </li>
+              </ul>
+            </nav>
+            <h1 class="p-header__logo">
+              <a href="#"
+                ><img src="./img/img_logo.svg" alt="ロゴ：MELIA FITNESS"
+              /></a>
+            </h1>
+            <nav class="p-nav">
+              <ul class="p-nav__list p-nav__list--right">
+                <li class="p-nav__item">
+                  <a href="#" class="p-nav__link">PRICE</a>
+                </li>
+                <li class="p-nav__item">
+                  <a href="#" class="p-nav__link">Q&A</a>
+                </li>
+                <li class="p-nav__item">
+                  <a href="#" class="p-nav__link">ACCESS</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="p-header__actions">
+              <div class="p-header__button">
+                <a href="" class="c-button">LINE予約</a>
+              </div>
+              <button
+                type="button"
+                id="js-header-menu-button"
+                class="p-header__menu-button"
+              >
+                <span class="p-header__drawer-icon-bar"></span>
+                <span class="p-header__drawer-icon-bar"></span>
+                <span class="p-header__drawer-icon-bar"></span>
+              </button>
+            </div>
+          </div>
+        </header>
+      </div>
+      <div id="js-drawer" class="l-drawer">
+        <div class="p-drawer">
+          <div class="p-drawer__menu">
+            <nav class="p-drawer__nav">
+              <ul class="p-drawer__nav-list">
+                <li class="p-drawer__nav-item">
+                  <a href="#home" class="p-drawer__nav-link">TOP</a>
+                </li>
+                <li class="p-drawer__nav-item">
+                  <a href="#owner-profile" class="p-drawer__nav-link"
+                    >OWNER’S PROFILE</a
+                  >
+                </li>
+                <li class="p-drawer__nav-item">
+                  <a href="#feature" class="p-drawer__nav-link">FEATURE</a>
+                </li>
+                <li class="p-drawer__nav-item">
+                  <a href="#members-voice" class="p-drawer__nav-link"
+                    >MEMBER’S VOICE</a
+                  >
+                </li>
+                <li class="p-drawer__nav-item">
+                  <a href="#price" class="p-drawer__nav-link">PRICE</a>
+                </li>
+                <li class="p-drawer__nav-item">
+                  <a href="#qa" class="p-drawer__nav-link">Q&A</a>
+                </li>
+                <li class="p-drawer__nav-item">
+                  <a href="#access" class="p-drawer__nav-link">ACCESS</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="c-sns-icons">
+              <ul class="c-sns-icons__list">
+                <li class="c-sns-icons__item">
+                  <a
+                    href="https://youtube.com"
+                    target="_blank"
+                    class="c-sns-icons__link c-sns-icons__link--youtube"
+                  >
+                  </a>
+                </li>
+                <li class="c-sns-icons__item">
+                  <a
+                    href="https://twitter.com"
+                    target="_blank"
+                    class="c-sns-icons__link c-sns-icons__link--twitter"
+                  >
+                  </a>
+                </li>
+                <li class="c-sns-icons__item">
+                  <a
+                    href="https://instagram.com"
+                    target="_blank"
+                    class="c-sns-icons__link c-sns-icons__link--instagram"
+                  >
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="l-mv">
+        <div class="p-mv">
+          <picture class="p-mv__img">
+            <source media="(min-width: 768px)" srcset="./img/mv-bg.png" />
+            <img
+              src="./img/mv-bg-sp.png"
+              alt="写真:ジムでダンベルを持っている笑顔の女性"
+              decoding="async"
+            />
+          </picture>
+          <div class="p-mv__container">
+            <h2 class="p-mv__lead--main">
+              <div class="p-mv__lead--large">週一</div>
+              <span class="p-mv__lead--medium">のトレーニング</span>
+              <span class="p-mv__lead--small">で</span>
+              <br />
+              <div class="p-mv__lead--large">人に見せたくなる</div>
+              <br class="u-hidden-sm" />
+              <div class="p-mv__lead--large">カラダ</div>
+              <span class="p-mv__lead--small">をつくる。</span>
+            </h2>
+            <p class="p-mv__lead--sub">
+              一流俳優・モデルを指導してきた<br
+                class="u-hidden-sm"
+              />本物のパーソナルトレーニング
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div class="l-voice">
+        <section class="p-voice">
+          <div class="p-voice__container">
+            <h3 class="p-voice__head">
+              トレーニングを受けた会員様から<br
+                class="u-hidden-md"
+              />こんな声が届いています。
+            </h3>
+            <div class="p-voice__body">
+              <div class="p-voice__block">
+                <div class="p-card">
+                  <div class="p-card__img-wrapper">
+                    <div class="p-card__img">
+                      <img
+                        src="./img/img_voice01.webp"
+                        alt="写真：ロングヘアの黒のウェアの女性"
+                      />
+                    </div>
+                  </div>
+                  <div class="p-card__body">
+                    <p class="p-card__title">理想的なカラダになれました！</p>
+                    <p class="p-card__message">
+                      マンツーマンの指導を受けることができ、自分のなりたい身体に合ったトレーニングができてとても良かったです。<br />2か月で理想の体型になることができました！
+                    </p>
+                    <p class="p-card__meta">38歳 会社員 女性</p>
+                  </div>
+                </div>
+              </div>
+              <div class="p-voice__block">
+                <div class="p-card p-card--reverse">
+                  <div class="p-card__img-wrapper">
+                    <div class="p-card__img">
+                      <img
+                        src="./img/img_voice02.webp"
+                        alt="写真：ロングヘアの黒のウェアの女性"
+                      />
+                    </div>
+                  </div>
+                  <div class="p-card__body">
+                    <p class="p-card__title">
+                      リバウンドせずに体型維持できています！
+                    </p>
+                    <p class="p-card__message">
+                      4か月前に目標の体重になってからなってからリバウンドもなく、今でもボディメイクを楽しんで続けられています。
+                    </p>
+                    <p class="p-card__meta">42歳 会社経営 女性</p>
+                  </div>
+                </div>
+              </div>
+              <div class="p-voice__block">
+                <div class="p-card">
+                  <div class="p-card__img-wrapper">
+                    <div class="p-card__img">
+                      <img
+                        src="./img/img_voice03.webp"
+                        alt="写真：トレーニング後のリラックスしている女性"
+                      />
+                    </div>
+                  </div>
+                  <div class="p-card__body">
+                    <p class="p-card__title">
+                      周りから“キレイになった”と言われます！
+                    </p>
+                    <p class="p-card__message">
+                      トレーニングをしてメリハリのある体になると、家族や友人から「とてもキレイになった」と褒めてもらえるように。<br />ボディメイクをきっかけに自信が持てるようになりました。
+                    </p>
+                    <p class="p-card__meta">32歳 専業主婦 女性</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="l-profile">
+        <section class="p-profile">
+          <h3 class="p-section-head">
+            <span class="p-section-head__en">OWNER’S PROFILE</span>
+            <span class="p-section-head__ja">代表プロフィール</span>
+          </h3>
+          <div class="p-profile__container">
+            <div class="p-profile__img-wrapper">
+              <div class="p-profile__img">
+                <img
+                  src="./img/img_profile.webp"
+                  alt="写真：トレーニングウェアのオーナー"
+                />
+              </div>
+            </div>
+            <div class="p-profile__body">
+              <div class="p-profile__info">
+                <p class="p-profile__name">Kailani</p>
+                <div class="p-profile__sns">
+                  <div class="c-sns-icons">
+                    <ul class="c-sns-icons__list">
+                      <li class="c-sns-icons__item">
+                        <a
+                          href="https://youtube.com"
+                          target="_blank"
+                          class="c-sns-icons__link c-sns-icons__link--youtube"
+                        >
+                        </a>
+                      </li>
+                      <li class="c-sns-icons__item">
+                        <a
+                          href="https://twitter.com"
+                          target="_blank"
+                          class="c-sns-icons__link c-sns-icons__link--twitter"
+                        >
+                        </a>
+                      </li>
+                      <li class="c-sns-icons__item">
+                        <a
+                          href="https://instagram.com"
+                          target="_blank"
+                          class="c-sns-icons__link c-sns-icons__link--instagram"
+                        >
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <p class="p-profile__content">
+                出産を機に激太りし、様々なダイエット法を試し、失敗を繰り返した過去を持つ。<br />
+                その後、筋トレや食事改善によってダイエットに成功。<br />自身の経験を活かし、現在はパーソナルトレーナーをしており、これまで1000人以上の肉体改造に成功。<br />
+                またYouTubeで1000万回再生された動画を持つ、筋トレインフルエンサーとしても活動している。<br />
+                YouTubeやInstagramではトレーニングやダイエットに良い食事法を発信している。
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="l-message">
+        <div class="p-message">
+          <div class="p-message__container">
+            <h4 class="p-message__head">Message</h4>
+            <p class="p-message__text">
+              MELIA
+              FITNESSではあなたに合った身体の動かし方や食生活の大切さをプロのトレーナーがマンツーマンでサポートいたします。<br />
+              継続することができて挫折しないボディメイク・ダイエットに自信があります。<br />
+              ぜひMELIA FITNESSで身体づくりの素晴らしさを体験してください。
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="l-problems">
+        <section class="p-problems">
+          <div class="p-problems__container">
+            <div class="p-problems__img">
+              <picture class="">
+                <source
+                  media="(min-width: 1024px)"
+                  srcset="./img/img_problems-bg-pc.webp"
+                />
+                <img
+                  src="./img/img_problems-bg-sp.webp"
+                  alt="写真：うつむいた女性"
+                  decoding="async"
+                />
+              </picture>
+            </div>
+            <div class="p-problems__content">
+              <h4 class="p-problems__head">こんなお悩みありませんか？</h4>
+              <ul class="p-problems__list">
+                <li class="p-problems__item">
+                  <p class="p-problems__text">
+                    トレーニングをしても本当に痩せられるか不安。
+                  </p>
+                </li>
+                <li class="p-problems__item">
+                  <p class="p-problems__text">
+                    トレーニングしたいけど時間がない。
+                  </p>
+                </li>
+                <li class="p-problems__item">
+                  <p class="p-problems__text">
+                    厳しい食事制限に耐えられるか分からない。
+                  </p>
+                </li>
+                <li class="p-problems__item">
+                  <p class="p-problems__text">
+                    一時的に痩せてもリバウンドしないか心配。
+                  </p>
+                </li>
+                <li class="p-problems__item">
+                  <p class="p-problems__text">
+                    ダイエットに失敗してきたので続けられるか不安。
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="l-introduction">
+        <div class="p-introduction">
+          <div class="p-introduction__container">
+            <p class="p-introduction__lead">
+              MELIA FITNESSは <br class="u-hidden-lg" />
+              そんな悩みをお持ちの方にこそ<br />
+              ご利用していただきたい理由があります。
+            </p>
+            <div class="p-introduction__icon"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="l-feature">
+        <section class="p-feature">
+          <div class="p-feature__container">
+            <h3 class="p-section-head">
+              <span class="p-section-head__en">FEATURE</span>
+              <span class="p-section-head__ja"
+                >MELIA FITNESSが選ばれる5つの特徴</span
+              >
+            </h3>
+            <div class="p-feature__body">
+              <div class="p-feature__block">
+                <div class="p-feature__card">
+                  <div class="p-feature__img-wrapper">
+                    <div class="p-feature__img">
+                      <img
+                        src="./img/img_feature01.webp"
+                        alt="写真：腹筋が割れている女性"
+                      />
+                    </div>
+                  </div>
+                  <div class="p-feature__content">
+                    <p class="p-feature__title">
+                      「人に見せたくなるカラダ作り」に<br />こだわったトレーニング
+                    </p>
+                    <p class="p-feature__text">
+                      体重を落とすだけではなく、人に見せたくなるカラダを目指したトレーニングをします。引き締まった魅力的なカラダになると、自信を持つことができます。
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="p-feature__block">
+                <div class="p-feature__card">
+                  <div class="p-feature__img-wrapper">
+                    <div class="p-feature__img">
+                      <img
+                        src="./img/img_feature02.webp"
+                        alt="写真：ランニングマシーンの前にいる女性"
+                      />
+                    </div>
+                  </div>
+                  <div class="p-feature__content">
+                    <p class="p-feature__title">
+                      お尻・太ももなどの部位を<br />効率的に鍛える最先端マシンの導入
+                    </p>
+                    <p class="p-feature__text">
+                      お尻や太ももを引き締めるトレーニングをするためのヒップスラスターという最先端のマシンを導入。<br />
+                      女性の美尻をつくると有名なマシンです。
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="p-feature__block">
+                <div class="p-feature__card">
+                  <div class="p-feature__img-wrapper">
+                    <div class="p-feature__img">
+                      <img
+                        src="./img/img_feature03.webp"
+                        alt="写真：鏡の前でトレーニングをしている女性"
+                      />
+                    </div>
+                  </div>
+                  <div class="p-feature__content">
+                    <p class="p-feature__title">
+                      厳しい食事制限なし&<br />トレーニングは週一～二回でOK
+                    </p>
+                    <p class="p-feature__text">
+                      厳しい食事制限ではなく、正しい食事習慣を身に着けられるようにサポートします。<br />
+                      トレーニングは週1回、たったの50分でOKなので、仕事や家事が忙しくてもご利用いただけます。
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="p-feature__block">
+                <div class="p-feature__card">
+                  <div class="p-feature__img-wrapper">
+                    <div class="p-feature__img">
+                      <img
+                        src="./img/img_feature04.webp"
+                        alt="写真：マシントレーニングをしている女性"
+                      />
+                    </div>
+                  </div>
+                  <div class="p-feature__content">
+                    <p class="p-feature__title">
+                      確実に筋肉をつけるので<br />リバウンドと無縁
+                    </p>
+                    <p class="p-feature__text">
+                      リバウンドの多くの原因は筋肉が落ちてしまって基礎代謝がおちてしまうこと。MELIA
+                      FITNESSのプログラムは確実に筋肉をつけるのでリバウンドしにくい身体になれます。
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="p-feature__block">
+                <div class="p-feature__card">
+                  <div class="p-feature__img-wrapper">
+                    <div class="p-feature__img">
+                      <img
+                        src="./img/img_feature05.webp"
+                        alt="写真：ダンベルトレーニングをしている女性"
+                      />
+                    </div>
+                  </div>
+                  <div class="p-feature__content">
+                    <p class="p-feature__title">
+                      "ボディメイクを楽しむ"がモットー<br />なので楽しく続けられる
+                    </p>
+                    <p class="p-feature__text">
+                      MELIA
+                      FITNESSはその方のなりたい体に合わせて、無理のない継続できるトレーニングを提案いたします。トレーニングと正しい食生活を継続すると、１～２か月で効果を感じていただけます。あなたの体が引き締まっていくのを感じると楽しく前向きに続けることができます。
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="p-feature__angled-wrapper">
+          <div class="p-feature__angled-img">
+            <picture class="">
+              <source
+                media="(min-width: 768px)"
+                srcset="./img/img_feature-angled-pc.webp"
+              />
+              <img
+                src="./img/img_feature-angled-sp.webp"
+                alt="写真：ヨガマットの上でトレーニングをしている女性"
+                decoding="async"
+              />
+            </picture>
+          </div>
+        </div>
+      </div>
+
+      <div class="l-members">
+        <section class="p-members">
+          <div class="p-members__container">
+            <div class="p-members__body">
+              <h3 class="p-section-head p-section-head--liner">
+                <span class="p-section-head__en">MEMBER’S VOICE</span>
+                <span class="p-section-head__ja">会員様の声</span>
+              </h3>
+              <div class="p-members__block">
+                <div class="p-card">
+                  <div class="p-card__img-wrapper">
+                    <div class="p-card__img">
+                      <img
+                        src="./img/img_members01.webp"
+                        alt="写真：引き締まったボディの女性"
+                      />
+                    </div>
+                  </div>
+                  <div class="p-card__body">
+                    <p class="p-card__title">
+                      引き締まったメリハリボディになれました！
+                    </p>
+                    <p class="p-card__meta">43歳 会社員 女性</p>
+                    <p class="p-card__message">
+                      自己流のダイエットでは体重は落ちても、なぜか体型はだらしないままで、少し時間が経つとリバウンドをしてしまっていました。<br />
+                      MELIA
+                      FITNESSでマンツーマンのトレーニングを受けて、リバウンド知らずの引き締まった身体を維持できています。<br />
+                      週1のトレーニングで無理なく通うことができ、楽しく続けることができています。<br />MELIA
+                      FITNESSを選んで良かったです！
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="p-members__block">
+                <div class="p-card p-card--reverse">
+                  <div class="p-card__img-wrapper">
+                    <div class="p-card__img">
+                      <img
+                        src="./img/img_members02.webp"
+                        alt="写真：トレーニングジムに通う女性"
+                      />
+                    </div>
+                  </div>
+                  <div class="p-card__body">
+                    <p class="p-card__title">
+                      ボディメイクが楽しくなりました！
+                    </p>
+                    <p class="p-card__meta">36歳 公務員 女性</p>
+                    <p class="p-card__message">
+                      前からジムに通っていましたが、ダイエットはいつも途中で挫折してしまっていたのでプロのトレーナーの方から教わりたいと思い、MELIA
+                      FITNESSを利用しました。<br />
+                      自分の目指している身体に合わせて、トレーニングや食生活について提案をしてくださるので、理想的なボディメイクができたと思っています。<br />
+                      今ではボディメイクをとても楽しく感じるようになりました。
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="p-members__block">
+                <div class="p-card">
+                  <div class="p-card__img-wrapper">
+                    <div class="p-card__img">
+                      <img
+                        src="./img/img_members03.webp"
+                        alt="写真：自信に満ち溢れた女性"
+                      />
+                    </div>
+                  </div>
+                  <div class="p-card__body">
+                    <p class="p-card__title">ダイエットに成功しました！</p>
+                    <p class="p-card__meta">32歳 会社員 女性</p>
+                    <p class="p-card__message">
+                      運動をほぼしたことがなく、トレーニングは厳しいものというイメージがあり、最初は不安でしたが、トレーナーの方に丁寧にトレーニング方法を教えていただくことができ、無理なく楽しく取り組めました。<br />
+                      ２か月で目標体重になり、身体も引き締まり、ダイエットに成功しました。<br />
+                      ダイエットに成功すると同時に、健康な身体を手に入れることが出来たと思います。
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="l-price">
+        <section class="p-price">
+          <h3 class="p-section-head">
+            <span class="p-section-head__en">PRICE</span>
+            <span class="p-section-head__ja">ご利用料金</span>
+          </h3>
+          <div class="p-price__head">
+            <p class="p-price__label">月額</p>
+            <p class="p-price__amount">
+              <span>¥</span><span>2</span><span>9</span><span>,</span
+              ><span>800</span>
+            </p>
+            <p class="p-price__tax">税込</p>
+          </div>
+          <p class="p-price__description">
+            週1で通うMELIA FITNESSの<br
+              class="u-hidden-md"
+            />パーソナルトレーニング
+          </p>
+          <p class="p-price__note">
+            トレーナーとマンツーマンで理想的なボディメイクを目指します。
+          </p>
+          <p class="p-price__additional-note">
+            ※Kailaniご指名の場合は月額￥39,800
+          </p>
+        </section>
+      </div>
+
+      <div class="l-campagin">
+        <section class="p-campagin">
+          <div class="p-campagin__inner">
+            <div class="p-campagin__wrapper">
+              <div class="p-campagin__head">期間限定無料体験キャンペーン</div>
+              <div class="p-campagin__limited">先着10名様限定</div>
+              <div class="p-campagin__content">
+                <p class="p-campagin__course-info">体験コース 1回60分</p>
+                <div class="p-campagin__price">
+                  <div class="p-campagin__common">
+                    <span class="p-campagin__common-jp">通常価格</span>
+                    <p class="p-campagin__common-price">
+                      ¥12,000<span class="taxt">税込</span>
+                    </p>
+                  </div>
+                  <div class="p-campagin__price-img">
+                    <img src="./img/campagin-arrow.svg" alt="" />
+                  </div>
+                  <div class="p-campagin__limited-price">
+                    <span class="p-campagin__limted-yen">￥</span>
+                    <span class="p-campagin__limted-number">0</span>
+                  </div>
+                </div>
+                <div class="p-campagin__period">
+                  <div class="p-campagin__period-jp">キャンペーン期間</div>
+                  <div class="p-campagin__period-schedule">
+                    12月1日（月）～12月30日（金）
+                  </div>
+                </div>
+              </div>
+              <div class="p-header__button p-campagin-button">
+                <a href="" class="c-button p-campagin__btn"
+                  >２分で完了！LINEで予約する</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="l-flow">
+        <section class="p-members">
+          <div class="p-members__container">
+            <div class="p-members__body">
+              <h3 class="p-section-head p-section-head--liner">
+                <span class="p-section-head__en p-flow-head">FLOW</span>
+                <span class="p-section-head__ja"
+                  >パーソナルトレーニングの流れ</span
+                >
+              </h3>
+              <div class="p-flow__boxs">
+                <div class="p-card p-flow__card">
+                  <div class="p-card__img-wrapper p-flow__img-wrapper">
+                    <div class="p-card__img p-flow-img">
+                      <img
+                        src="./img/flow01.png"
+                        alt="写真：トレーナーに相談している"
+                      />
+                    </div>
+                  </div>
+                  <div class="p-card__body p-flow__body">
+                    <p class="p-flow__title">STEP01</p>
+                    <p class="p-flow__meta">カウンセリング</p>
+                    <p class="p-flow__message">
+                      まずはカウンセリングでお体の状態やライフスタイルをお伺いし、今後の流れをご説明いたします。
+                    </p>
+                  </div>
+                </div>
+                <div class="p-card p-flow__card">
+                  <div class="p-card__img-wrapper p-flow__img-wrapper">
+                    <div class="p-card__img p-flow-img">
+                      <img src="./img/flow02.png" alt="写真：メジャーの画像" />
+                    </div>
+                  </div>
+                  <div class="p-card__body p-flow__body">
+                    <p class="p-flow__title">STEP02</p>
+                    <p class="p-flow__meta">測定・メニュー提案</p>
+                    <p class="p-flow__message">
+                      体組成計で現在の身体の状態を確認します。その後、理想の身体になるためのトレーニングメニューをご提案させていただきます。
+                    </p>
+                  </div>
+                </div>
+                <div class="p-card p-flow__card">
+                  <div class="p-card__img-wrapper p-flow__img-wrapper">
+                    <div class="p-card__img p-flow-img">
+                      <img
+                        src="./img/flow03.png"
+                        alt="写真：トレーニングしている女性"
+                      />
+                    </div>
+                  </div>
+                  <div class="p-card__body p-flow__body">
+                    <p class="p-flow__title">STEP03</p>
+                    <p class="p-flow__meta">トレーニング</p>
+                    <p class="p-flow__message">
+                      専属のトレーナーがマンツーマンであなたのなりたい身体に合わせたトレーニングをサポートいたします。
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="l-qa">
+        <section id="qa" class="qa">
+          <div class="qa__inner inner">
+            <h3 class="p-section-head">
+              <span class="p-section-head__en">Q&A</span>
+              <span class="p-section-head__ja">よくあるご質問</span>
+            </h3>
+            <div class="qa__boxs">
+              <div class="qa__box">
+                <p class="qa__head">
+                  ダイエットをしたいのですが、どれくらいの効果がありますか？
+                </p>
+                <p class="qa__body">
+                  個人差はありますが、週に1回のパーソナルトレーニングと自宅でのトレーニング、食生活を改善することで、２か月で効果を感じていただくことができます。
+                </p>
+              </div>
+              <div class="qa__box">
+                <p class="qa__head">
+                  運動をしたことがなく、体力に自信がありません。大丈夫でしょうか？
+                </p>
+                <p class="qa__body">
+                  MELIA
+                  FITNESSは専属のトレーナーがマンツーマンでトレーニングのサポートをしております。また、無理なトレーニングはしないため、運動をしたことがなく、体力に自信がない方でも安心して取り組んでいただけます。
+                </p>
+              </div>
+              <div class="qa__box">
+                <p class="qa__head">リバウンドはしませんか？</p>
+                <p class="qa__body">
+                  リバウンドの原因は筋肉が落ちて基礎代謝が下がってしまうことが原因であると考えられています。<br />
+                  MELIA
+                  FITNESSのプログラムでは、確実に筋肉をつけられますので、リバウンドしにくい体になれます。
+                </p>
+              </div>
+              <div class="qa__box">
+                <p class="qa__head">厳しい食事制限をする自信がありません。</p>
+                <p class="qa__body">
+                  MELIA
+                  FITNESSでは食事の選び方や食べ方など食事改善についてアドバイスを行っております。<br />
+                  厳しい食事制限はありませんのでご安心ください。
+                </p>
+              </div>
+              <div class="qa__box">
+                <p class="qa__head">
+                  トレーニングの際に必要なものはありますか？
+                </p>
+                <p class="qa__body">
+                  トレーニングウェアとトレーニング時に使用するシューズをおもちください。<br />
+                  お持ちでない場合はレンタルをご用意しておりますのでご利用ください。
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <picture class="gym__img">
+        <source media="(min-width: 768px)" srcset="./img/gym-pc.png" />
+        <img src="./img/gym-sp.png" alt="" />
+      </picture>
+
+      <div class="l-access">
+        <section id="access" class="access">
+          <div class="access__inner inner">
+            <h3 class="p-section-head p-section-head--liner">
+              <span class="p-section-head__en p-access-head">ACCESS</span>
+              <span class="p-section-head__ja">アクセス</span>
+            </h3>
+            <div class="access__flex">
+              <div class="access__content">
+                <h3 class="access__sub-title subheading">MELIA FITNESS</h3>
+                <p class="access__text min-font">
+                  パーソナルトレーニングジム メリアフィットネス
+                </p>
+                <ul class="access__lists">
+                  <li class="access__list">
+                    〒170-6045<br />
+                    東京都豊島区東池袋3-1-1 サンシャイン60 45階
+                  </li>
+                  <li class="access__list">JR池袋駅より徒歩５分</li>
+                  <li class="access__list">TEL 00-0000-0000</li>
+                  <li class="access__list">営業時間　10：00～22：00</li>
+                </ul>
+              </div>
+              <div class="access__map--pc">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12955.482661764638!2d139.7181562!3d35.7293992!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d6f393e6fa5%3A0x2d61fabefab2f99f!2z44K144Oz44K344Oj44Kk44OzNjDjg5Pjg6s!5e0!3m2!1sja!2sjp!4v1727607269722!5m2!1sja!2sjp"
+                  width="600"
+                  height="450"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="access__map--sp">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12955.482661764638!2d139.7181562!3d35.7293992!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d6f393e6fa5%3A0x2d61fabefab2f99f!2z44K144Oz44K344Oj44Kk44OzNjDjg5Pjg6s!5e0!3m2!1sja!2sjp!4v1727607269722!5m2!1sja!2sjp"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </section>
+      </div>
+
+      <div class="l-campagin">
+        <section class="p-campagin">
+          <div class="p-campagin__inner">
+            <div class="p-campagin__wrapper">
+              <div class="p-campagin__head">期間限定無料体験キャンペーン</div>
+              <div class="p-campagin__limited">先着10名様限定</div>
+              <div class="p-campagin__content">
+                <p class="p-campagin__course-info">体験コース 1回60分</p>
+                <div class="p-campagin__price">
+                  <div class="p-campagin__common">
+                    <span class="p-campagin__common-jp">通常価格</span>
+                    <p class="p-campagin__common-price">
+                      ¥12,000<span class="taxt">税込</span>
+                    </p>
+                  </div>
+                  <div class="p-campagin__price-img">
+                    <img src="./img/campagin-arrow.svg" alt="" />
+                  </div>
+                  <div class="p-campagin__limited-price">
+                    <span class="p-campagin__limted-yen">￥</span>
+                    <span class="p-campagin__limted-number">0</span>
+                  </div>
+                </div>
+                <div class="p-campagin__period">
+                  <div class="p-campagin__period-jp">キャンペーン期間</div>
+                  <div class="p-campagin__period-schedule">
+                    12月1日（月）～12月30日（金）
+                  </div>
+                </div>
+              </div>
+              <div class="p-header__button p-campagin-button">
+                <a href="" class="c-button p-campagin__btn"
+                  >２分で完了！LINEで予約する</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <footer class="p-footer">
+        <div class="p-footer__inner">
+          <div class="p-footer__container">
+            <div class="p-footer__right">
+              <h1 class="p-footer__logo">
+                <a href="#"
+                  ><img src="./img/img_logo.svg" alt="ロゴ：MELIA FITNESS"
+                /></a>
+              </h1>
+            </div>
+            <div class="p-footer__left">
+              <nav class="p-footer__nav">
+                <ul class="p-footer__nav-list">
+                  <li class="p-footer__nav-item">
+                    <a href="#home" class="p-footer__nav-link">TOP</a>
+                  </li>
+                  <li class="p-footer__nav-item">
+                    <a href="#owner-profile" class="p-footer__nav-link"
+                      >OWNER’S PROFILE</a
+                    >
+                  </li>
+                  <li class="p-footer__nav-item">
+                    <a href="#feature" class="p-footer__nav-link">FEATURE</a>
+                  </li>
+                  <li class="p-footwer__nav-item">
+                    <a href="#members-voice" class="p-footer__nav-link"
+                      >MEMBER’S VOICE</a
+                    >
+                  </li>
+                  <li class="p-footwer__nav-item">
+                    <a href="#price" class="p-footer__nav-link">PRICE</a>
+                  </li>
+                  <li class="p-footer__nav-item">
+                    <a href="#qa" class="p-footer__nav-link">Q&A</a>
+                  </li>
+                  <li class="p-footer__nav-item">
+                    <a href="#access" class="p-footer__nav-link">ACCESS</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="c-sns-icons p-footer__sns">
+                <ul class="c-sns-icons__list">
+                  <li class="c-sns-icons__item">
+                    <a
+                      href="https://youtube.com"
+                      target="_blank"
+                      class="c-sns-icons__link c-sns-icons__link--youtube"
+                    >
+                    </a>
+                  </li>
+                  <li class="c-sns-icons__item">
+                    <a
+                      href="https://twitter.com"
+                      target="_blank"
+                      class="c-sns-icons__link c-sns-icons__link--twitter"
+                    >
+                    </a>
+                  </li>
+                  <li class="c-sns-icons__item">
+                    <a
+                      href="https://instagram.com"
+                      target="_blank"
+                      class="c-sns-icons__link c-sns-icons__link--instagram"
+                    >
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="p-footer__under">
+            <span class="p-footer__text">
+              このサイトはMELINDA様のご協力のもと作成したコーディング用の練習課題です。実在の人物・団体とは関係ありません。
+            </span>
+            <div class="p-footer__copylight">© 2021 MELIA FITNESS</div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="./js/script.min.js?v=1.0"></script>
+</html>
